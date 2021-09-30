@@ -9,8 +9,8 @@ android {
         applicationId "com.cwaliimran.fastestqrcodescanner"
         minSdk 23
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 2 //latest release on 30/09/2021
+        versionName "1.0.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,10 +36,16 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.android.gms:play-services-vision-common:19.1.3'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'org.ocpsoft.prettytime:prettytime:5.0.0.Final'
+
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
 
 }

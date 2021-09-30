@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name="com.cwaliimran.fastestqrcodescanner.ui.MainActivity" />
+        <activity android:name="com.cwaliimran.fastestqrcodescanner.ui.MainActivity"  android:hardwareAccelerated="true" />
+        <activity android:name="com.cwaliimran.fastestqrcodescanner.ui.ScanQRCodeActivity"  android:hardwareAccelerated="true"/>
+        <activity android:name="com.cwaliimran.fastestqrcodescanner.ui.QRCodeResultActivity"  android:hardwareAccelerated="true"/>
         <activity
             android:name="com.cwaliimran.fastestqrcodescanner.ui.SplashActivity"
             android:exported="true">
@@ -26,6 +28,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+<!--        live id : ca-app-pub-7053088796893953~9536129655-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7053088796893953~9536129655"/>
     </application>
 
 </manifest>

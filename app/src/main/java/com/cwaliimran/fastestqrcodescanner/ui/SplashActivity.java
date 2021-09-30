@@ -14,6 +14,7 @@ public class SplashActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         hideActionbar();
+        context = this;
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
